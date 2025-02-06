@@ -1,3 +1,4 @@
-data/testset
-data/trainset
-data/valset
+Pet/data/testset/
+Pet/data/trainset/
+Pet/data/valset/
+Pet/src/__pycache__/
