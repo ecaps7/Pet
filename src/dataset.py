@@ -92,27 +92,3 @@ def get_data_loaders(train_dir, val_dir, test_dir, train_label_file, val_label_f
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
     return train_loader, val_loader, test_loader
-
-
-# 可视化数据函数
-def visualize_data(data_loader, num_images=3):
-    # 获取一批数据
-    images, labels = next(iter(data_loader))
-
-    # 将张量转换为 numpy 数组并反归一化
-    images = images.numpy().transpose(0, 2, 3, 1)
-    images = images * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
-
-    # 限制可视化数据的个数
-    images = images[:num_images]
-    labels = labels[:num_images]
-
-    # 可视化图像
-    import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(1, num_images, figsize=(15, 6))
-    for i in range(num_images):
-        axes[i].imshow(np.clip(images[i], 0, 1))
-        axes[i].axis('off')
-        axes[i].set_title(f'Age: {labels[i].item()}')
-
-    plt.show()
