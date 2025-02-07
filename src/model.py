@@ -1,8 +1,9 @@
+import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
 import torchvision.models as models
 from torch.utils.data import DataLoader
 
@@ -55,9 +56,12 @@ def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.
 
 # 在测试集上评估模型
 def evaluate_model(model, test_loader):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
     model.eval()
     true_ages = []
     predicted_ages = []
+    image_names = []
 
     with torch.no_grad():
         for images, ages in test_loader:
@@ -65,6 +69,16 @@ def evaluate_model(model, test_loader):
             outputs = model(images)
             true_ages.extend(ages.cpu().numpy())
             predicted_ages.extend(outputs.squeeze().cpu().numpy())
+            batch_image_names = [name for name, _ in test_loader.dataset.labels[test_loader.dataset.current_index:test_loader.dataset.current_index + len(ages)]]
+            image_names.extend(batch_image_names)
+            test_loader.dataset.current_index += len(ages)
 
-    mse = mean_squared_error(true_ages, predicted_ages)
-    print(f"Test MSE: {mse:.4f}")
+    mae = mean_absolute_error(true_ages, predicted_ages)
+    print(f"Test MAE: {mae:.4f}")
+
+    base_dir = os.path.dirname(os.path.realpath(__file__))
+    pred_result_file = os.path.join(base_dir, '../data/annotations/pred_result.txt')
+    with open(pred_result_file, 'w') as f:
+        for name, age in zip(image_names, predicted_ages):
+            f.write(f"{name} {int(age)}\n")
+    print(f"Prediction results saved to {pred_result_file}")

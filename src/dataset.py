@@ -29,6 +29,7 @@ class PetAgeDataset(Dataset):
         self.data_dir = data_dir
         self.transform = transform
         self.labels = []
+        self.current_index = 0
 
         # 读取标签文件
         with open(label_file, 'r') as f:
@@ -62,7 +63,7 @@ def get_transforms():
         A.GaussianBlur(blur_limit=(3, 7), p=0.5),  # 调整模糊度
         A.OneOf([
             A.MultiplicativeNoise(multiplier=[0.9, 1.1], p=0.5),
-            A.GaussNoise(var_limit=(10.0, 50.0), p=0.5)
+            A.GaussNoise(mean=0, std=(10.0, 50.0), p=0.5)
         ], p=0.5),  # 处理噪声
         A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1, p=0.5),  # 调节亮度和对比度
         A.ShiftScaleRotate(shift_limit=0.1, scale_limit=0.1, rotate_limit=10, p=0.5),  # 调节位置

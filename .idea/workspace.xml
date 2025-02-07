@@ -5,103 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61db1c2e-faa3-4139-bedd-5e2649d52ace" name="更改" comment="finished data preprocessing">
-      <change afterPath="$PROJECT_DIR$/data/annotations/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/split_data.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/split_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Pet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/annotations/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/annotations/train.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/annotations/val.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/annotations/val.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/23X3CsZYRQqWOxF4WaDbxAAAACMAARAD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/23X3CsZYRQqWOxF4WaDbxAAAACMAARAD.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/Gh0oU8byT_2m1CDqRfQtKgAAACMAARAD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/Gh0oU8byT_2m1CDqRfQtKgAAACMAARAD.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN011Ueryl296IGy8hAGL_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN011Ueryl296IGy8hAGL_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN012O1SrI1ekpHiCvqXx_!!6000000003910-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN012O1SrI1ekpHiCvqXx_!!6000000003910-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN013wgJ5w1gvwApBXb6L_!!6000000004205-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN013wgJ5w1gvwApBXb6L_!!6000000004205-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN014KhRnT1ebCvrffjpC_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN014KhRnT1ebCvrffjpC_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN014eJaRB1T9J8EJDib6_!!2678262339-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN014eJaRB1T9J8EJDib6_!!2678262339-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN014oTyWm1HBLROQq42L_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN014oTyWm1HBLROQq42L_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN0152esAI1JkjBpgsO6m_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN0152esAI1JkjBpgsO6m_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN0166CBjP29mtFJriuKb_!!6000000008111-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN0166CBjP29mtFJriuKb_!!6000000008111-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN016G0z51229m2SS2hnn_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN016G0z51229m2SS2hnn_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN016kMjU31H2BRHsx0us_!!6000000000699-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN016kMjU31H2BRHsx0us_!!6000000000699-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN017k9POt1wboWVJL4jE_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN017k9POt1wboWVJL4jE_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN018KCQAv1XvAySDiacG_!!6000000002985-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN018KCQAv1XvAySDiacG_!!6000000002985-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN018PDIAY1Zi0h3ieo79_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN018PDIAY1Zi0h3ieo79_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN018ZlT9Z2EjkaJ7dCps_!!851768781-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN018ZlT9Z2EjkaJ7dCps_!!851768781-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN018e1C7F1W5acYibial_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN018e1C7F1W5acYibial_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN019clk3E1C5mUoqwQe4_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN019clk3E1C5mUoqwQe4_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01A5Xb3q1vPcKxEttKn_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01A5Xb3q1vPcKxEttKn_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01B33BQe1qrwkyhmm1f_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01B33BQe1qrwkyhmm1f_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01DTHOZ420L6gTNE0MB_!!6000000006832-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01DTHOZ420L6gTNE0MB_!!6000000006832-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01DYF38A20tSMfFRYma_!!6000000006907-0-antinsbiocamera.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01DYF38A20tSMfFRYma_!!6000000006907-0-antinsbiocamera.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01ELVcNv25WcfUwC4xD_!!2232097534-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01ELVcNv25WcfUwC4xD_!!2232097534-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01EXmNJj1Mkg7ZLPinQ_!!1770311473-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01EXmNJj1Mkg7ZLPinQ_!!1770311473-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01EeX2Wm23XQ0xqZTzE_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01EeX2Wm23XQ0xqZTzE_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01ElEKzF2AxFiN3XCdn_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01ElEKzF2AxFiN3XCdn_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01GQ6OsY1KIAA5hflOW_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01GQ6OsY1KIAA5hflOW_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01GXyOp31opXSym26QS_!!6000000005274-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01GXyOp31opXSym26QS_!!6000000005274-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01H2vHBQ1XZeEPneda0_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01H2vHBQ1XZeEPneda0_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01HV8Ao81EDEETb3HEu_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01HV8Ao81EDEETb3HEu_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01IMc4HQ1prCUmn2pqK_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01IMc4HQ1prCUmn2pqK_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01IwkfRd24MG4nMDgYP_!!1953277376-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01IwkfRd24MG4nMDgYP_!!1953277376-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01KtuHeI1vkEHduPMOu_!!602466210-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01KtuHeI1vkEHduPMOu_!!602466210-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01LTWZ9g1EYkoxs4skp_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01LTWZ9g1EYkoxs4skp_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01LpVpV41puPK8R5g3j_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01LpVpV41puPK8R5g3j_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01Lspr801RBTgxjhJfy_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01Lspr801RBTgxjhJfy_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01MUEGCb1Id766fDeo6_!!6000000000915-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01MUEGCb1Id766fDeo6_!!6000000000915-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01N9szFw1LvNh4MQkym_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01N9szFw1LvNh4MQkym_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01OHHRlK20c3HUbYmxy_!!6000000006869-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01OHHRlK20c3HUbYmxy_!!6000000006869-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01OHbgEg2A9muRJPi6m_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01OHbgEg2A9muRJPi6m_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01OKHVdn1N4pXeHwsG7_!!6000000001517-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01OKHVdn1N4pXeHwsG7_!!6000000001517-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01OLImrs21sMxbACrrz_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01OLImrs21sMxbACrrz_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01OVp8Yb20vHwyTJ0aS_!!392366911-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01OVp8Yb20vHwyTJ0aS_!!392366911-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01PE0efW1FEtFNjQfQc_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01PE0efW1FEtFNjQfQc_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01QqvH8p1xMWvJR1JyO_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01QqvH8p1xMWvJR1JyO_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01RvrNY429QRhRvvVwN_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01RvrNY429QRhRvvVwN_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01SdilLg1PqZyFfj26k_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01SdilLg1PqZyFfj26k_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01TBNzz21QkSMiijNhG_!!6000000002014-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01TBNzz21QkSMiijNhG_!!6000000002014-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01Us34Ho1kPCDntvYRC_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01Us34Ho1kPCDntvYRC_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01VI80aX1gO2n28EHJu_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01VI80aX1gO2n28EHJu_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01WoYR7x1YtAjI0Jedj_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01WoYR7x1YtAjI0Jedj_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01XOWpc31cZFzqyh98o_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01XOWpc31cZFzqyh98o_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01brd63p1onFUIxLoXQ_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01brd63p1onFUIxLoXQ_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01cCr2Ry1bqNGIbB6wy_!!6000000003516-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01cCr2Ry1bqNGIbB6wy_!!6000000003516-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01cyFHur1lNC6fzHcNo_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01cyFHur1lNC6fzHcNo_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01fGMppY2G0WapEW0rl_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01fGMppY2G0WapEW0rl_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01fxGrUa25DNvTx9A4R_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01fxGrUa25DNvTx9A4R_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01g0Tec5251w44wg3su_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01g0Tec5251w44wg3su_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01hOx0GH1mfnvxCbBwj_!!6000000004982-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01hOx0GH1mfnvxCbBwj_!!6000000004982-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01heP0Bg1niNfbnDGmV_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01heP0Bg1niNfbnDGmV_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01j9DSbC1MJecur1nnw_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01j9DSbC1MJecur1nnw_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01juj0I31fwYyQPFT8H_!!6000000004071-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01juj0I31fwYyQPFT8H_!!6000000004071-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01jvce9K1b0cSnXpgcD_!!1075153403-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01jvce9K1b0cSnXpgcD_!!1075153403-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01kifWxD1uvOIZNijZM_!!6000000006099-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01kifWxD1uvOIZNijZM_!!6000000006099-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01l61gNP21ed3sfQzFk_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01l61gNP21ed3sfQzFk_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01mQDCwV1LGcUCNA6Hw_!!2668741272-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01mQDCwV1LGcUCNA6Hw_!!2668741272-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01nZXtXY1uPmrqHz5sH_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01nZXtXY1uPmrqHz5sH_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01nbQzxt1aPWQ3XquWa_!!6000000003322-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01nbQzxt1aPWQ3XquWa_!!6000000003322-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01p2pmT126MNKMiIezd_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01p2pmT126MNKMiIezd_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01pcPdEg1SXIBFO9L8y_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01pcPdEg1SXIBFO9L8y_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01qt1Mny28GzvelgdDb_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01qt1Mny28GzvelgdDb_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01r5vF6R1NwsE6wtat4_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01r5vF6R1NwsE6wtat4_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01ra9pMa1C7cDwDrObM_!!2619460034-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01ra9pMa1C7cDwDrObM_!!2619460034-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01rnbWC61Vj9EzQY3tq_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01rnbWC61Vj9EzQY3tq_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01s2MKBX1khW5rHg9jZ_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01s2MKBX1khW5rHg9jZ_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01shf0bh1T7vwZ7UnpG_!!6000000002336-0-tmgpet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01shf0bh1T7vwZ7UnpG_!!6000000002336-0-tmgpet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01uprD5B1DSyANKbj9j_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01uprD5B1DSyANKbj9j_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01vAsDCH1TNVIEQTBN2_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01vAsDCH1TNVIEQTBN2_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01wMAhkA1IZRyHqt6sE_!!6000000000907-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01wMAhkA1IZRyHqt6sE_!!6000000000907-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01wieKne1S7BYsJQQEr_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01wieKne1S7BYsJQQEr_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01xhoBtf1o2zX8ONHaG_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01xhoBtf1o2zX8ONHaG_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01xyOfXs1EL0uis5K6y_!!0-mtopupload.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01xyOfXs1EL0uis5K6y_!!0-mtopupload.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/O1CN01zp2E3R1Bun60ys8CX_!!6000000000006-0-antinsbiocamera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/O1CN01zp2E3R1Bun60ys8CX_!!6000000000006-0-antinsbiocamera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/b8e8cc5814394eb683e3260848ec4814.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/b8e8cc5814394eb683e3260848ec4814.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/eQoTXXWjTQKpY1_uap9_zgAAACMAARED.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/eQoTXXWjTQKpY1_uap9_zgAAACMAARED.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/jAbbtAzjQ6imey104hdMogAAACMAARAD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/jAbbtAzjQ6imey104hdMogAAACMAARAD.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/oR3pafNESCWUlqFyxjN0WgAAACMAARAD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/oR3pafNESCWUlqFyxjN0WgAAACMAARAD.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/valset/xJHcJEzuRtqK1wQBa5dBQQAAACMAARAD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/testset/xJHcJEzuRtqK1wQBa5dBQQAAACMAARAD.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/data_preprocessing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/data_preprocessing.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,12 +49,12 @@
     &quot;assignee&quot;: &quot;ecaps7&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ecaps7/Pet.git&quot;,
-    &quot;accountId&quot;: &quot;b5addd9d-7c01-439b-9ed3-7f83854bd69f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ecaps7/Pet.git",
+    "accountId": "ee603da5-c82d-49bb-ae5e-8a8e4b8408fb"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../.ideavimrc" root0="SKIP_INSPECTION" />
   </component>
@@ -168,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/ecaps7/Pet",
+    "last_opened_file_path": "/home/ubuntu/Pet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -197,7 +110,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32980865" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.32980865" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33081573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32980865" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
@@ -253,8 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
-        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
+        <option value="bundled-js-predefined-d6986cc7102b-4027fba43365-JavaScript-PY-251.18673.39" />
+        <option value="bundled-python-sdk-54b45ae7caa8-b9098cbcb096-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.18673.39" />
       </set>
     </attachedChunks>
   </component>
@@ -271,6 +184,8 @@
       <workItem from="1738488137291" duration="5924000" />
       <workItem from="1738500087929" duration="4740000" />
       <workItem from="1738825486493" duration="5378000" />
+      <workItem from="1738845582355" duration="90000" />
+      <workItem from="1738851694951" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="sample project">
       <option name="closed" value="true" />

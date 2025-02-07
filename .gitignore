@@ -1,4 +1,6 @@
-Pet/data/testset/
-Pet/data/trainset/
-Pet/data/valset/
-Pet/src/__pycache__/
+/data/testset/
+/data/trainset/
+/data/valset/
+src/__pycache__/dataset.cpython-312.pyc
+src/__pycache__/dataset.cpython-312.pyc
+src/__pycache__/model.cpython-312.pyc
