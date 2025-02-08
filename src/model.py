@@ -9,9 +9,9 @@ import torchvision.models as models
 from torch.utils.data import DataLoader
 
 
-# 创建回归模型（使用 ResNet50 预训练模型）
+# 创建回归模型（使用 ResNet18 预训练模型）
 def create_model():
-    model = models.resnet50(pretrained=True)
+    model = models.resnet18(pretrained=True)
     model.fc = nn.Linear(model.fc.in_features, 1)  # 修改最后一层适应回归任务
     return model
 
@@ -99,5 +99,5 @@ def evaluate_model(model, test_loader):
     pred_result_file = os.path.join(base_dir, '../data/annotations/pred_result.txt')
     with open(pred_result_file, 'w') as f:
         for name, age in zip(image_names, predicted_ages):
-            f.write(f"{name} {int(age)}\n")
+            f.write(f"{name}	{int(age)}\n")
     print(f"Prediction results saved to {pred_result_file}")

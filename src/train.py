@@ -39,7 +39,7 @@ def main():
 
     # 训练模型
     print("Training model...")
-    train_model(model, train_loader, val_loader, num_epochs=4, learning_rate=0.01)
+    train_model(model, train_loader, val_loader, num_epochs=6, learning_rate=0.001)
 
     # 评估模型
     print("Evaluating model on test set...")

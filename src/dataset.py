@@ -60,13 +60,18 @@ def get_transforms():
     train_transform = A.Compose([
         A.Resize(height=224, width=224),  # 缩放图片到 224x224
         A.HorizontalFlip(p=0.5),  # 随机水平翻转
-        A.GaussianBlur(blur_limit=(3, 7), p=0.5),  # 调整模糊度
+        A.VerticalFlip(p=0.2),  # 随机垂直翻转
+        A.GaussianBlur(blur_limit=(3, 9), p=0.5),  # 调整模糊度，增大模糊范围
         A.OneOf([
-            A.MultiplicativeNoise(multiplier=[0.9, 1.1], p=0.5),
-            A.GaussNoise(mean=0, std=(10.0, 50.0), p=0.5)
+            A.MultiplicativeNoise(multiplier=[0.8, 1.2], p=0.5),  # 增大乘数范围
+            A.GaussNoise(mean=0, std=(10.0, 60.0), p=0.5)  # 增大噪声标准差范围
         ], p=0.5),  # 处理噪声
-        A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1, p=0.5),  # 调节亮度和对比度
-        A.ShiftScaleRotate(shift_limit=0.1, scale_limit=0.1, rotate_limit=10, p=0.5),  # 调节位置
+        A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.5),  # 增大亮度和对比度调节范围
+        A.HueSaturationValue(hue_shift_limit=20, sat_shift_limit=30, val_shift_limit=20, p=0.5),  # 颜色抖动
+        A.ElasticTransform(alpha=120, sigma=120 * 0.05, alpha_affine=120 * 0.03, p=0.3),  # 弹性变换
+        A.ShiftScaleRotate(shift_limit=0.15, scale_limit=0.15, rotate_limit=15, p=0.5),  # 增大位置调节范围
+        A.RandomCrop(height=200, width=200, p=0.3),  # 随机裁剪
+        A.Resize(height=224, width=224),  # 裁剪后重新缩放
         A.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),  # 归一化
         ToTensorV2()  # 转换为张量
     ])
