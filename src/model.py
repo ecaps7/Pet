@@ -18,7 +18,7 @@ def create_model():
 
 # 训练模型
 def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.001, patience=3):
-    criterion = nn.MSELoss()  # 使用均方误差作为回归任务的损失函数
+    criterion = nn.SmoothL1Loss()  # 使用均方误差作为回归任务的损失函数
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     scheduler = lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

@@ -28,7 +28,7 @@ def main():
 
     train_dataset = PetAgeDataset(train_dir, train_label_file, transform=train_transform)
     val_dataset = PetAgeDataset(val_dir, val_label_file, transform=val_transform)
-    test_dataset = PetAgeDataset(test_dir, test_label_file, transform=val_transform)
+    test_dataset = PetAgeDataset(test_dir, test_label_file, transform=val_transform, clean_labels=False)
 
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)

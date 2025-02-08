@@ -25,7 +25,7 @@ def clean_noisy_labels(labels, std_threshold=3):
 
 # 自定义数据集类
 class PetAgeDataset(Dataset):
-    def __init__(self, data_dir, label_file, transform=None):
+    def __init__(self, data_dir, label_file, transform=None, clean_labels=True):
         self.data_dir = data_dir
         self.transform = transform
         self.labels = []
@@ -38,7 +38,8 @@ class PetAgeDataset(Dataset):
                 self.labels.append((image_name, int(age)))
 
         # 清洗噪声标签
-        self.labels = clean_noisy_labels(self.labels)
+        if clean_labels:
+            self.labels = clean_noisy_labels(self.labels)
 
     def __len__(self):
         return len(self.labels)
