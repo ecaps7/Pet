@@ -46,7 +46,11 @@ class PetAgeDataset(Dataset):
     def __getitem__(self, idx):
         image_name, age = self.labels[idx]
         image_path = os.path.join(self.data_dir, image_name)
-        image = Image.open(image_path).convert('RGB')
+        try:
+            image = Image.open(image_path).convert('RGB')
+        except Exception as e:
+            print(f"Error loading image {image_name}: {e}")
+            return None
         image = np.array(image)
 
         if self.transform:
