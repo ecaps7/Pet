@@ -2,6 +2,7 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from torch.optim import lr_scheduler
 from tqdm import tqdm
 from sklearn.metrics import mean_absolute_error
 import torchvision.models as models
@@ -16,13 +17,17 @@ def create_model():
 
 
 # 训练模型
-def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.001):
+def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.001, patience=3):
     criterion = nn.MSELoss()  # 使用均方误差作为回归任务的损失函数
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    scheduler = lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
 
-    for epoch in range(num_epochs):
+    best_val_loss = float('inf')
+    patience_counter = 0
+
+    for epoch in range(num_epochs): 
         model.train()
         running_loss = 0.0
 
@@ -52,6 +57,20 @@ def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.
 
         avg_val_loss = val_loss / len(val_loader)
         print(f"Validation Loss: {avg_val_loss:.4f}")
+
+        scheduler.step()
+
+        # 早停逻辑
+        if avg_val_loss < best_val_loss:
+            best_val_loss = avg_val_loss
+            patience_counter = 0
+        else:
+            patience_counter += 1
+            if patience_counter >= patience:
+                print(f"Early stopping after epoch {epoch + 1}. No improvement in validation loss for {patience} epochs.")
+                break
+
+    return model
 
 
 # 在测试集上评估模型
