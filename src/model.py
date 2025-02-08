@@ -72,7 +72,6 @@ def train_model(model, train_loader, val_loader, num_epochs=10, learning_rate=0.
 
     return model
 
-
 # 在测试集上评估模型
 def evaluate_model(model, test_loader):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -82,15 +81,18 @@ def evaluate_model(model, test_loader):
     predicted_ages = []
     image_names = []
 
+    index = 0  # 定义一个索引变量来替代 test_loader.dataset.current_index
+
     with torch.no_grad():
         for images, ages in test_loader:
             images, ages = images.to(device), ages.to(device)
             outputs = model(images)
             true_ages.extend(ages.cpu().numpy())
             predicted_ages.extend(outputs.squeeze().cpu().numpy())
-            batch_image_names = [name for name, _ in test_loader.dataset.labels[test_loader.dataset.current_index:test_loader.dataset.current_index + len(ages)]]
+            # 获取当前批次的图像名称
+            batch_image_names = [name for name, _ in test_loader.dataset.labels[index:index + len(ages)]]
             image_names.extend(batch_image_names)
-            test_loader.dataset.current_index += len(ages)
+            index += len(ages)  # 更新索引
 
     mae = mean_absolute_error(true_ages, predicted_ages)
     print(f"Test MAE: {mae:.4f}")
