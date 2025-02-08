@@ -87,8 +87,9 @@ def evaluate_model(model, test_loader):
             outputs = model(images)
             true_ages.extend(ages.cpu().numpy())
             predicted_ages.extend(outputs.squeeze().cpu().numpy())
-            
-            batch_image_names = [name for name, _ in test_loader.dataset.labels[index:index + len(ages)]]
+
+            # 获取当前批次的图片名称
+            batch_image_names = [name for name, _ in test_loader.dataset.labels[index*test_loader.batch_size:(index+1)*test_loader.batch_size]]
             image_names.extend(batch_image_names)
 
     mae = mean_absolute_error(true_ages, predicted_ages)
